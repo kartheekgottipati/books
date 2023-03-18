@@ -1,0 +1,6 @@
+[book]
+authors = ["Kartheek Gottipati"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Ansible for Beginners: A Comprehensive Guide to Automation and Configuration Management"
