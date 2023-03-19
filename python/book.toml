@@ -1,0 +1,6 @@
+[book]
+authors = ["Kartheek, Gottipati"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Python for beginners"
