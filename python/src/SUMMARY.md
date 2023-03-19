@@ -58,8 +58,4 @@
     - [Web Development](web-development.md)
     - [Databases](databases.md)
 
-  - [Example Projects](example-projects.md)
-
-    - [Basic](basic-projects.md)
-    - [Intermediate](intermediate-projects.md)
-    - [Advanced](advanced-projects.md)
+  - [Practice Projects](practice-projects.md)
