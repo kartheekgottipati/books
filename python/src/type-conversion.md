@@ -63,44 +63,90 @@ Implicit type conversions happen automatically. For example, when we add an inte
 
 Explicit type conversions happen when we call a type conversion function like `int`, `float`, or `str`. Explicit type conversions are useful when we want to convert a value to a specific type.
 
+We can convert a float to an integer using the `int` function.
+
 ```python
 >>> int(1.0)
 1
+```
 
+We can convert an integer to a float using the `float` function.
+
+```python
 >>> float(1)
 1.0
+```
 
+We can convert an integer to a string using the `str` function.
+
+```python
 >>> str(1)
 '1'
+```
 
+We can convert a string to an integer using the `int` function.
+
+```python
 >>> int('1')
 1
+```
 
+We can convert a string to a float using the `float` function.
+
+```python
 >>> float('1.0')
 1.0
+```
 
+We can convert a float to a string using the `str` function.
+
+```python
 >>> str(1.0)
 '1.0'
+```
 
+We can convert a string to an integer using the `int` function.
+
+```python
 >>> int('1.0')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: invalid literal for int() with base 10: '1.0'
+```
 
+We can convert a string to a float using the `float` function.
+
+```python
 >>> float('1')
 1.0
+```
 
+We can convert a int to a string using the `str` function.
+
+```python
 >>> str(1)
 '1'
+```
 
+We can not convert a string to an integer using the `int` function if the string contains a decimal point.
+
+```python
 >>> int('1.0')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: invalid literal for int() with base 10: '1.0'
+```
 
+We can convert a string to a float using the `float` function.
+
+```python
 >>> float('1.0')
 1.0
+```
 
+We can convert a float to a string using the `str` function.
+
+```python
 >>> str(1.0)
 '1.0'
 ```
@@ -109,7 +155,7 @@ Type conversion is an important concept in programming because it allows you to 
 
 However, it is important to use type conversion carefully and appropriately. Improper use of type conversion can lead to unexpected results or errors in your code. It is important to ensure that the data type you are converting to is appropriate for the operation you are trying to perform.
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

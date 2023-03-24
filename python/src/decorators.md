@@ -17,11 +17,15 @@ def my_decorator(func):
         func()
         print("Something is happening after the function is called.")
     return wrapper
+```
 
+```python
 @my_decorator
 def say_whee():
     print("Whee!")
+```
 
+```python
 say_whee()
 ```
 
@@ -51,11 +55,15 @@ def decorator_with_arguments(function):
         print("My arguments are: {0}, {1}".format(arg1, arg2))
         function(arg1, arg2)
     return wrapper_accepting_arguments
+```
 
+```python
 @decorator_with_arguments
 def cities(city_one, city_two):
     print("I love {0} and {1}!".format(city_one, city_two))
+```
 
+```python
 cities("New York", "London")
 ```
 
@@ -76,18 +84,24 @@ def decorator_one(func):
         print("Decorator one")
         func()
     return wrapper
+```
 
+```python
 def decorator_two(func):
     def wrapper():
         print("Decorator two")
         func()
     return wrapper
+```
 
+```python
 @decorator_one
 @decorator_two
 def say_whee():
     print("Whee!")
+```
 
+```python
 say_whee()
 ```
 
@@ -111,11 +125,15 @@ def function_repeater(number_of_times):
                 func(*args, **kwargs)
         return wrapper
     return my_decorator
+```
 
+```python
 @function_repeater(number_of_times=3)
 def greet(name):
     print(f"Hello {name}")
+```
 
+```python
 greet("World")
 ```
 
@@ -139,11 +157,15 @@ def function_repeater(number_of_times):
                 func(*args, **kwargs)
         return wrapper
     return my_decorator
+```
 
+```python
 @function_repeater(number_of_times=3)
 def greet(name):
     print(f"Hello {name}")
+```
 
+```python
 greet("John")
 ```
 
@@ -181,7 +203,9 @@ class Person:
         first, last = person_str.split(" ")
         person = cls(first, last)
         return person
+```
 
+```python
 person = Person.from_string("John Doe")
 print(person.first)
 print(person.last)
@@ -209,7 +233,9 @@ class Person:
     @staticmethod
     def is_string_empty(string):
         return not bool(string and string.strip())
+```
 
+```python
 print(Person.is_string_empty(" "))
 print(Person.is_string_empty("a"))
 ```
@@ -236,7 +262,9 @@ class Person:
     @property
     def full_name(self):
         return f"{self.first} {self.last}"
+```
 
+```python
 person = Person("John", "Doe")
 print(person.full_name)
 ```
@@ -264,7 +292,9 @@ class Shape(ABC):
     @abstractmethod
     def perimeter(self):
         pass
+```
 
+```python
 class Square(Shape):
     def __init__(self, side):
         self.side = side
@@ -274,7 +304,9 @@ class Square(Shape):
 
     def perimeter(self):
         return 4 * self.side
+```
 
+```python
 square = Square(4)
 print(square.area())
 print(square.perimeter())

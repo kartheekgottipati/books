@@ -7,19 +7,19 @@ In programming, input and output are the two most important things. In this chap
 In Python, we can take input from the user using the `input()` function. The `input()` function takes a string as an argument and displays it to the user. The user can then enter a value and press the Enter key. The value entered by the user is returned by the `input()` function.
 
 ```python
-name = input("Enter your name: ")
->>> Enter your name: John
-print("Hello, " + name)
->>> Hello, John
+>>> name = input("Enter your name: ")
+Enter your name: John
+>>> print("Hello, " + name)
+Hello, John
 ```
 
 The `input()` function always returns a string. If you want to take an integer as input, you have to convert it to an integer using the `int()` function.
 
 ```python
-age = int(input("Enter your age: "))
->>> Enter your age: 20
-print("You are " + age + " years old.")
->>> You are 20 years old.
+>>> age = int(input("Enter your age: "))
+Enter your age: 20
+>>> print("You are " + age + " years old.")
+You are 20 years old.
 ```
 
 ## Displaying Output to the User
@@ -27,8 +27,8 @@ print("You are " + age + " years old.")
 In Python, we can display output to the user using the `print()` function. The `print()` function takes a string as an argument and displays it to the user.
 
 ```python
-print("Hello, World!")
->>> Hello, World!
+>>> print("Hello, World!")
+Hello, World!
 ```
 
 ### Displaying Output on the Same Line
@@ -36,9 +36,9 @@ print("Hello, World!")
 By default, the `print()` function displays the output on a new line. If you want to display the output on the same line, you can use the `end` parameter of the `print()` function.
 
 ```python
-print("Hello", end = " ")
-print("World")
->>> Hello World
+>>> print("Hello", end = " ")
+>>> print("World")
+Hello World
 ```
 
 ### Displaying Output With a Separator
@@ -46,8 +46,8 @@ print("World")
 By default, the `print()` function displays the output with a space between each argument. If you want to display the output with a different separator, you can use the `sep` parameter of the `print()` function.
 
 ```python
-print("Hello", "World", sep = "-")
->>> Hello-World
+>>> print("Hello", "World", sep = "-")
+Hello-World
 ```
 
 ### Displaying Output With flush
@@ -55,8 +55,8 @@ print("Hello", "World", sep = "-")
 By default, the `print()` function displays the output in the buffer. If you want to display the output immediately, you can use the `flush` parameter of the `print()` function.
 
 ```python
-print("Hello", flush = True)
->>> Hello
+>>> print("Hello", flush = True)
+Hello
 ```
 
 ## Reading from a File
@@ -110,7 +110,6 @@ To read a file with encoding, we can use the `encoding` parameter of the `open()
 
 ```python
 file = open("file.txt", "r", encoding="utf-8")
-
 file.read()
 ```
 
@@ -120,7 +119,6 @@ In Python, we can write to a file using the `open()` function. The `open()` func
 
 ```python
 file = open("file.txt", "w")
-
 file.write("Hello, World!")
 ```
 
@@ -130,7 +128,6 @@ To write multiple lines to the file, we can use the `writelines()` method of the
 
 ```python
 file = open("file.txt", "w")
-
 file.writelines(["Hello, World!", "Hello, World!"])
 ```
 
@@ -140,7 +137,6 @@ To write to a file with encoding, we can use the `encoding` parameter of the `op
 
 ```python
 file = open("file.txt", "w", encoding="utf-8")
-
 file.write("Hello, World!")
 ```
 
@@ -150,7 +146,6 @@ In Python, we can append to a file using the `open()` function. The `open()` fun
 
 ```python
 file = open("file.txt", "a")
-
 file.write("Hello, World!")
 ```
 
@@ -160,7 +155,6 @@ To append multiple lines to the file, we can use the `writelines()` method of th
 
 ```python
 file = open("file.txt", "a")
-
 file.writelines(["Hello, World!", "Hello, World!"])
 ```
 
@@ -170,7 +164,6 @@ To append to a file with encoding, we can use the `encoding` parameter of the `o
 
 ```python
 file = open("file.txt", "a", encoding="utf-8")
-
 file.write("Hello, World!")
 ```
 
@@ -180,7 +173,6 @@ In Python, we can close a file using the `close()` method of the file object.
 
 ```python
 file = open("file.txt", "r")
-
 file.close()
 ```
 
@@ -214,7 +206,7 @@ with open("file.txt", "r", encoding="utf-8") as file:
     file.read()
 ```
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

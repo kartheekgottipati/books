@@ -22,7 +22,9 @@ Python gotchas can occur when you use mutable objects as default arguments. For 
 def my_function(my_list=[]):
     my_list.append(1)
     print(my_list)
+```
 
+```python
 my_function()
 my_function()
 ```
@@ -42,7 +44,9 @@ def my_function(my_list=None):
         my_list = []
     my_list.append(1)
     print(my_list)
+```
 
+```python
 my_function()
 my_function()
 ```
@@ -86,10 +90,14 @@ Variables defines inside a loop or comprehension can leak into surrounding scope
 
 ```python
 x = 1
+```
 
+```python
 for x in range(5):
     pass
+```
 
+```python
 print(x)
 ```
 
@@ -103,10 +111,14 @@ This is because the variable `x` is defined inside the loop. This means that the
 
 ```python
 x = 1
+```
 
+```python
 for y in range(5):
     pass
+```
 
+```python
 print(x)
 ```
 
@@ -123,7 +135,9 @@ In python closures capture the value of variables by name not by value. For exam
 ```python
 def create_multipliers():
     return [lambda x : i * x for i in range(5)]
+```
 
+```python
 for multiplier in create_multipliers():
     print(multiplier(2))
 ```
@@ -143,7 +157,9 @@ This is because the variable `i` is captured by name. This means that the variab
 ```python
 def create_multipliers():
     return [lambda x, i=i : i * x for i in range(5)]
+```
 
+```python
 for multiplier in create_multipliers():
     print(multiplier(2))
 ```
@@ -178,6 +194,9 @@ This is because strings are immutable. This means that you cannot change the val
 ```python
 my_string = list("Hello World")
 my_string[0] = "J"
+```
+
+```python
 print("".join(my_string))
 ```
 

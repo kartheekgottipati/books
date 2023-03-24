@@ -13,10 +13,24 @@ Let's see an example of polymorphism with a function:
 ```python
 def add(x, y, z = 0):
     return x + y + z
+```
 
+```python
 print(add(2, 3))
+```
 
+```python
+# Output:
+# 5
+```
+
+```python
 print(add(2, 3, 4))
+```
+
+```python
+# Output:
+# 9
 ```
 
 In the above example, we have defined the `add()` function that takes two parameters, `x` and `y`. However, we have also defined a default value of `z` as `0`. This means that the `add()` function can take 2 or 3 parameters. This is an example of polymorphism. Polymorphism allows us to define the same method in different ways.
@@ -32,22 +46,32 @@ class Animal:
 
     def talk(self):
         raise NotImplementedError("Subclass must implement abstract method")
+```
 
+```python
 class Cat(Animal):
     def talk(self):
         return 'Meow!'
+```
 
+```python
 class Dog(Animal):
     def talk(self):
         return 'Woof! Woof!'
+```
 
+```python
 animals = [Cat('Missy'),
            Cat('Mr. Mistoffelees'),
            Dog('Lassie')]
+```
 
+```python
 for animal in animals:
     print(animal.name + ': ' + animal.talk())
+```
 
+```python
 # Output:
 # Missy: Meow!
 # Mr. Mistoffelees: Meow!
@@ -81,24 +105,32 @@ class Car:
 
     def set_brand(self, brand):
         self._brand = brand
+```
 
-car = Car()
->>> updating software
+```python
+>>> car = Car()
+updating software
+```
 
-car.drive()
->>> driving
+```python
+>>> car.drive()
+driving
+```
 
+```python
 car.set_brand('Audi')
+```
 
-car.get_brand()
->>> Audi
+```python
+>>> car.get_brand()
+Audi
 ```
 
 In the above example, we have defined the `_brand` attribute as private. This means that we cannot access it directly. We have to use the `get_brand()` and `set_brand()` methods to access it.
 
 python does not have a concept of private variables. However, by using single underscore, we can achieve the same result. This is just a convention that should be followed by programmers while coding.
 
-### Double Underscore
+## Double Underscore
 
 Let's see an example of double underscore:
 
@@ -119,18 +151,28 @@ class Car:
 
     def set_brand(self, brand):
         self.__brand = brand
+```
 
-car = Car()
->>> updating software
+```python
+>>> car = Car()
+updating software
+```
 
-car.drive()
->>> driving
+```python
+>>> car.drive()
+driving
+```
 
-car.set_brand('Audi')
+```python
+>>> car.set_brand('Audi')
+```
 
-car.get_brand()
->>> Audi
+```python
+>>> car.get_brand()
+Audi
+```
 
+```python
 car.__brand
 >>> AttributeError: 'Car' object has no attribute '__brand'
 ```
@@ -154,25 +196,33 @@ class Animal(ABC):
     @abstractmethod
     def move(self):
         pass
+```
 
+```python
 class Human(Animal):
 
     def move(self):
         print("I can walk and run")
+```
 
+```python
 class Snake(Animal):
     pass
+```
 
+```python
 raj = Human()
 raj.move()
+```
 
+```python
 kaa = Snake()
 >>> TypeError: Can't instantiate abstract class Snake with abstract methods move
 ```
 
 In the above example, we have defined the `Animal` class as abstract. This means that we cannot create an instance of `Animal` class. We have to create a child class and implement the abstract methods in it.
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

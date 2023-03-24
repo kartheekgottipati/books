@@ -30,8 +30,8 @@
   - [Dictionaries](dictionaries.md)
   - [Bytearrays](bytearrays.md)
   - [Tuples](tuples.md)
-  - [frozen sets](frozen-sets.md)
-  - [bytes](bytes.md)
+  - [Frozen sets](frozen-sets.md)
+  - [Bytes](bytes.md)
 
 - [Exception Handling](exception-handling.md)
 

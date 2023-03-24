@@ -20,12 +20,18 @@ To create a task in Python, you can use the `asyncio.create_task()` function. Th
 
 ```python
 import asyncio
+```
 
+```python
 async def task():
     print('Hello World')
+```
 
+```python
 asyncio.create_task(task())
+```
 
+```python
 asyncio.run(asyncio.sleep(0))
 ```
 
@@ -35,9 +41,13 @@ You can also create a task using a lambda function. This is useful if you want t
 
 ```python
 import asyncio
+```
 
+```python
 asyncio.create_task(lambda: print('Hello World'))
+```
 
+```python
 asyncio.run(asyncio.sleep(0))
 ```
 
@@ -47,16 +57,22 @@ You can also create a task using a class. This is useful if you want to pass arg
 
 ```python
 import asyncio
+```
 
+```python
 class MyTask:
     def __init__(self, name):
         self.name = name
 
     async def __call__(self):
         print('Hello', self.name)
+```
 
+```python
 asyncio.create_task(MyTask('World'))
+```
 
+```python
 asyncio.run(asyncio.sleep(0))
 ```
 

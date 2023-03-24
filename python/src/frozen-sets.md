@@ -4,31 +4,46 @@ Frozensets are immutable unordered collections of unique values. They can contai
 
 ```python
 >>> a = frozenset([1, 2, 3])
+```
+
+```python
 >>> type(a)
 <class 'frozenset'>
+```
 
-# Add an item to a frozenset
+## Add an item to a frozenset
+
+```python
 >>> a = frozenset([1, 2, 3])
 >>> a.add(4)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: 'frozenset' object has no attribute 'add'
+```
 
-# Change an item in a frozenset
+## Change an item in a frozenset
+
+```python
 >>> a = frozenset([1, 2, 3])
 >>> a[0] = 4
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'frozenset' object does not support item assignment
+```
 
-# Delete an item from a frozenset
+## Delete an item from a frozenset
+
+```python
 >>> a = frozenset([1, 2, 3])
 >>> del a[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'frozenset' object doesn't support item deletion
+```
 
-# Remove all items from a frozenset
+## Remove all items from a frozenset
+
+```python
 >>> a = frozenset([1, 2, 3])
 >>> a.clear()
 Traceback (most recent call last):
@@ -36,7 +51,7 @@ Traceback (most recent call last):
 AttributeError: 'frozenset' object has no attribute 'clear'
 ```
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

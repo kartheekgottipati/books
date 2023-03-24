@@ -35,16 +35,19 @@ import socket
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect to the server
+
 client_socket.connect(('google.com', 80))
 
 # Send data
+
 client_socket.send(b'GET / HTTP/1.1\r\nHost: google.com\r\n\r\n')
 
 # Receive data
-response = client_socket.recv(4096)
-print(response.decode())
+
+response = client_socket.recv(4096) print(response.decode())
 
 # Close the socket
+
 client_socket.close()
 ```
 
@@ -77,6 +80,7 @@ while True:
 
     # Close the socket
     client_socket.close()
+`
 ```
 
 ## Working with HTTP Requests

@@ -17,7 +17,9 @@ def countdown():
     while i > 0:
         yield i
         i -= 1
+```
 
+```python
 for i in countdown():
     print(i)
 ```
@@ -47,7 +49,9 @@ All these objects have a `iter()` method which is used to get an iterator:
 ```python
 mytuple = ("apple", "banana", "cherry")
 myit = iter(mytuple)
+```
 
+```python
 print(next(myit))
 print(next(myit))
 print(next(myit))
@@ -66,7 +70,9 @@ Even strings are iterable objects, and can return an iterator:
 ```python
 mystr = "banana"
 myit = iter(mystr)
+```
 
+```python
 print(next(myit))
 print(next(myit))
 print(next(myit))
@@ -130,10 +136,14 @@ class MyNumbers:
     if x > 4:
       raise StopIteration
     return x
+```
 
+```python
 myclass = MyNumbers()
 myiter = iter(myclass)
+```
 
+```python
 print(next(myiter))
 print(next(myiter))
 print(next(myiter))

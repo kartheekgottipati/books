@@ -6,15 +6,15 @@ In this section, we will learn about the basic operations that can be performed 
 
 Arithmetic operators are used to perform mathematical operations on variables. The following table lists the arithmetic operators in Python.
 
-| Operator | Description    | Example  |
-| -------- | -------------- | -------- |
-| `+`      | Addition       | `x + y`  |
-| `-`      | Subtraction    | `x - y`  |
-| `*`      | Multiplication | `x * y`  |
-| `/`      | Division       | `x / y`  |
-| `%`      | Modulus        | `x % y`  |
-| `**`     | Exponentiation | `x ** y` |
-| `//`     | Floor division | `x // y` |
+Operator | Description    | Example
+-------- | -------------- | --------
+`+`      | Addition       | `x + y`
+`-`      | Subtraction    | `x - y`
+`*`      | Multiplication | `x * y`
+`/`      | Division       | `x / y`
+`%`      | Modulus        | `x % y`
+`**`     | Exponentiation | `x ** y`
+`//`     | Floor division | `x // y`
 
 ### Addition
 
@@ -97,14 +97,14 @@ x // y
 
 Comparison operators are used to compare two variables. The following table lists the comparison operators in Python.
 
-| Operator | Description              | Example  |
-| -------- | ------------------------ | -------- |
-| `==`     | Equal to                 | `x == y` |
-| `!=`     | Not equal to             | `x != y` |
-| `>`      | Greater than             | `x > y`  |
-| `<`      | Less than                | `x < y`  |
-| `>=`     | Greater than or equal to | `x >= y` |
-| `<=`     | Less than or equal to    | `x <= y` |
+Operator | Description              | Example
+-------- | ------------------------ | --------
+`==`     | Equal to                 | `x == y`
+`!=`     | Not equal to             | `x != y`
+`>`      | Greater than             | `x > y`
+`<`      | Less than                | `x < y`
+`>=`     | Greater than or equal to | `x >= y`
+`<=`     | Less than or equal to    | `x <= y`
 
 ### Equal to
 
@@ -176,21 +176,21 @@ x <= y
 
 Assignment operators are used to assign values to variables. The following table lists the assignment operators in Python.
 
-| Operator | Description               | Example   | Same As      |
-| -------- | ------------------------- | --------- | ------------ |
-| `=`      | Assign                    | `x = 5`   | `x = 5`      |
-| `+=`     | Add and assign            | `x += 3`  | `x = x + 3`  |
-| `-=`     | Subtract and assign       | `x -= 3`  | `x = x - 3`  |
-| `*=`     | Multiply and assign       | `x *= 3`  | `x = x * 3`  |
-| `/=`     | Divide and assign         | `x /= 3`  | `x = x / 3`  |
-| `%=`     | Modulus and assign        | `x %= 3`  | `x = x % 3`  |
-| `//=`    | Floor division and assign | `x //= 3` | `x = x // 3` |
-| `**=`    | Exponentiation and assign | `x **= 3` | `x = x ** 3` |
-| `&=`     | Bitwise and assign        | `x &= 3`  | `x = x & 3`  |
-| `\|=`    | Bitwise or assign         | `x \|= 3` | `x = x \| 3` |
-| `^=`     | Bitwise xor assign        | `x ^= 3`  | `x = x ^ 3`  |
-| `>>=`    | Bitwise right shift       | `x >>= 3` | `x = x >> 3` |
-| `<<=`    | Bitwise left shift        | `x <<= 3` | `x = x << 3` |
+Operator | Description               | Example           | Same As
+-------- | ------------------------- | ----------------- | ------------
+`=`      | Assign                    | `x = 5`           | `x = 5`
+`+=`     | Add and assign            | `x += 3`          | `x = x + 3`
+`-=`     | Subtract and assign       | `x -= 3`          | `x = x - 3`
+`*=`     | Multiply and assign       | `x *= 3`          | `x = x * 3`
+`/=`     | Divide and assign         | `x /= 3`          | `x = x / 3`
+`%=`     | Modulus and assign        | `x %= 3`          | `x = x % 3`
+`//=`    | Floor division and assign | `x //= 3`         | `x = x // 3`
+`**=`    | Exponentiation and assign | `x **= 3`         | `x = x ** 3`
+`&=`     | Bitwise and assign        | `x &= 3`          | `x = x & 3`
+`\       | =`                        | Bitwise or assign | `x \         | = 3` | `x = x \ | 3`
+`^=`     | Bitwise xor assign        | `x ^= 3`          | `x = x ^ 3`
+`>>=`    | Bitwise right shift       | `x >>= 3`         | `x = x >> 3`
+`<<=`    | Bitwise left shift        | `x <<= 3`         | `x = x << 3`
 
 ### Assign
 
@@ -325,11 +325,11 @@ x <<= 10
 
 Logical operators are used to combine conditional statements. The following table lists the logical operators in Python.
 
-| Operator | Description                                                 | Example                 |
-| -------- | ----------------------------------------------------------- | ----------------------- |
-| `and`    | Returns `True` if both statements are `True`                | `x < 5 and x < 10`      |
-| `or`     | Returns `True` if one of the statements is `True`           | `x < 5 or x < 4`        |
-| `not`    | Reverse the result, returns `False` if the result is `True` | `not(x < 5 and x < 10)` |
+Operator | Description                                                 | Example
+-------- | ----------------------------------------------------------- | -----------------------
+`and`    | Returns `True` if both statements are `True`                | `x < 5 and x < 10`
+`or`     | Returns `True` if one of the statements is `True`           | `x < 5 or x < 4`
+`not`    | Reverse the result, returns `False` if the result is `True` | `not(x < 5 and x < 10)`
 
 ### And
 
@@ -365,12 +365,12 @@ not(x < 5 and x < 10)
 
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location. The following table lists the identity operators in Python.
 
-| Operator | Description                                                                        | Example      |
-| -------- | ---------------------------------------------------------------------------------- | ------------ |
-| `is`     | Returns `True` if both variables are the same object                               | `x is y`     |
-| `is not` | Returns `True` if both variables are not the same object                           | `x is not y` |
-| `in`     | Returns `True` if a sequence with the specified value is present in the object     | `x in y`     |
-| `not in` | Returns `True` if a sequence with the specified value is not present in the object | `x not in y` |
+Operator | Description                                                                        | Example
+-------- | ---------------------------------------------------------------------------------- | ------------
+`is`     | Returns `True` if both variables are the same object                               | `x is y`
+`is not` | Returns `True` if both variables are not the same object                           | `x is not y`
+`in`     | Returns `True` if a sequence with the specified value is present in the object     | `x in y`
+`not in` | Returns `True` if a sequence with the specified value is not present in the object | `x not in y`
 
 ### Is
 
@@ -420,14 +420,14 @@ x = ["apple", "banana"]
 
 Bitwise operators are used to compare (binary) numbers. The following table lists the bitwise operators in Python.
 
-| Operator | Name                 | Description                                                                                             | Example  |
-| -------- | -------------------- | ------------------------------------------------------------------------------------------------------- | -------- |
-| `&`      | AND                  | Sets each bit to `1` if both bits are `1`                                                               | `a & b`  |
-| `\|`     | OR                   | Sets each bit to `1` if one of two bits is `1`                                                          | `a \| b` |
-| `^`      | XOR                  | Sets each bit to `1` if only one of two bits is `1`                                                     | `a ^ b`  |
-| `~`      | NOT                  | Inverts all the bits                                                                                    | `~a`     |
-| `<<`     | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off                        | `a << 2` |
-| `>>`     | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off | `a >> 2` |
+Operator | Name                 | Description                                                                                             | Example
+-------- | -------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------
+`&`      | AND                  | Sets each bit to `1` if both bits are `1`                                                               | `a & b`
+`\       | `                    | OR                                                                                                      | Sets each bit to `1` if one of two bits is `1` | `a \ | b`
+`^`      | XOR                  | Sets each bit to `1` if only one of two bits is `1`                                                     | `a ^ b`
+`~`      | NOT                  | Inverts all the bits                                                                                    | `~a`
+`<<`     | Zero fill left shift | Shift left by pushing zeros in from the right and let the leftmost bits fall off                        | `a << 2`
+`>>`     | Signed right shift   | Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off | `a >> 2`
 
 ### AND
 
@@ -442,13 +442,13 @@ a & b
 
 ### OR
 
-The `\|` operator is used to compare (binary) numbers. The `\|` operator sets each bit to `1` if one of two bits is `1`. The following is an example of the `\|` operator in Python:
+The `|` operator is used to compare (binary) numbers. The `|` operator sets each bit to `1` if one of two bits is `1`. The following is an example of the `|` operator in Python:
 
 ```python
 # OR
 a = 50
 b = 25
-a \| b
+a | b
 ```
 
 ### XOR
@@ -496,44 +496,44 @@ a >> 2
 
 Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated. Certain operators have higher precedence than others; for example, the multiplication operator has higher precedence than the addition operator. The following table lists the operators in Python, in order of precedence.
 
-| Operator | Description                                                                        |
-| -------- | ---------------------------------------------------------------------------------- |
-| `**`     | Exponentiation                                                                     |
-| `~`      | Bitwise NOT                                                                        |
-| `*`      | Multiplication                                                                     |
-| `/`      | Division                                                                           |
-| `%`      | Modulus                                                                            |
-| `+`      | Addition                                                                           |
-| `-`      | Subtraction                                                                        |
-| `>>`     | Right shift                                                                        |
-| `<<`     | Left shift                                                                         |
-| `&`      | Bitwise AND                                                                        |
-| `^`      | Bitwise XOR                                                                        |
-| `\|`     | Bitwise OR                                                                         |
-| `<=`     | Less than or equal to                                                              |
-| `<`      | Less than                                                                          |
-| `>`      | Greater than                                                                       |
-| `>=`     | Greater than or equal to                                                           |
-| `==`     | Equal to                                                                           |
-| `!=`     | Not equal to                                                                       |
-| `=`      | Assignment                                                                         |
-| `+=`     | Add AND assignment                                                                 |
-| `-=`     | Subtract AND assignment                                                            |
-| `*=`     | Multiply AND assignment                                                            |
-| `/=`     | Divide AND assignment                                                              |
-| `%=`     | Modulus AND assignment                                                             |
-| `>>=`    | Right shift AND assignment                                                         |
-| `<<=`    | Left shift AND assignment                                                          |
-| `&=`     | Bitwise AND assignment                                                             |
-| `^=`     | Bitwise XOR assignment                                                             |
-| `\|=`    | Bitwise OR assignment                                                              |
-| `is`     | Returns `True` if both variables are the same object                               |
-| `is not` | Returns `True` if both variables are not the same object                           |
-| `in`     | Returns `True` if a sequence with the specified value is present in the object     |
-| `not in` | Returns `True` if a sequence with the specified value is not present in the object |
-| `not`    | Logical NOT                                                                        |
-| `and`    | Logical AND                                                                        |
-| `or`     | Logical OR                                                                         |
+Operator | Description
+-------- | ----------------------------------------------------------------------------------
+`**`     | Exponentiation
+`~`      | Bitwise NOT
+`*`      | Multiplication
+`/`      | Division
+`%`      | Modulus
+`+`      | Addition
+`-`      | Subtraction
+`>>`     | Right shift
+`<<`     | Left shift
+`&`      | Bitwise AND
+`^`      | Bitwise XOR
+`\       | `                                                                                  | Bitwise OR
+`<=`     | Less than or equal to
+`<`      | Less than
+`>`      | Greater than
+`>=`     | Greater than or equal to
+`==`     | Equal to
+`!=`     | Not equal to
+`=`      | Assignment
+`+=`     | Add AND assignment
+`-=`     | Subtract AND assignment
+`*=`     | Multiply AND assignment
+`/=`     | Divide AND assignment
+`%=`     | Modulus AND assignment
+`>>=`    | Right shift AND assignment
+`<<=`    | Left shift AND assignment
+`&=`     | Bitwise AND assignment
+`^=`     | Bitwise XOR assignment
+`\       | =`                                                                                 | Bitwise OR assignment
+`is`     | Returns `True` if both variables are the same object
+`is not` | Returns `True` if both variables are not the same object
+`in`     | Returns `True` if a sequence with the specified value is present in the object
+`not in` | Returns `True` if a sequence with the specified value is not present in the object
+`not`    | Logical NOT
+`and`    | Logical AND
+`or`     | Logical OR
 
 The following is an example of operator precedence in Python:
 
@@ -543,48 +543,78 @@ x = 5
 y = 10
 z = 15
 x + y * z
+```
 
+```python
 # Output
 155
+```
 
+```python
 # Parentheses
 (x + y) * z
+```
 
+```python
 # Output
 255
+```
 
+```python
 x = 2 + 3 * 4
+```
 
+```python
 # Output
 14
+```
 
+```python
 x = 2 * 3 ** 2
+```
 
+```python
 # Output
 18
+```
 
+```python
 x = 6 / 2 * 3
+```
 
+```python
 # Output
 9.0
+```
 
+```python
 x = 10 - 2 + 3
+```
 
+```python
 # Output
 11
+```
 
+```python
 x = 2 < 3 and 4 < 5 or 6 < 7
+```
 
+```python
 # Output
 True
+```
 
+```python
 x = 10 + 4 % 3
+```
 
+```python
 # Output
 12
 ```
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

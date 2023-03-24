@@ -28,10 +28,14 @@ To create a thread in Python, you can use the `threading` module. The `threading
 
 ```python
 import threading
+```
 
+```python
 def task():
     print('Hello World')
+```
 
+```python
 thread = threading.Thread(target=task)
 thread.start()
 ```
@@ -42,7 +46,9 @@ You can also create a thread by subclassing the `Thread` class. This is useful i
 
 ```python
 import threading
+```
 
+```python
 class MyThread(threading.Thread):
     def __init__(self, name):
         super().__init__()
@@ -50,7 +56,9 @@ class MyThread(threading.Thread):
 
     def run(self):
         print('Hello', self.name)
+```
 
+```python
 thread = MyThread('World')
 thread.start()
 ```
@@ -61,7 +69,9 @@ You can also create a thread using a lambda function. This is useful if you want
 
 ```python
 import threading
+```
 
+```python
 thread = threading.Thread(target=lambda: print('Hello World'))
 thread.start()
 ```
@@ -72,10 +82,14 @@ To create a process in Python, you can use the `multiprocessing` module. The `mu
 
 ```python
 import multiprocessing
+```
 
+```python
 def task():
     print('Hello World')
+```
 
+```python
 process = multiprocessing.Process(target=task)
 process.start()
 ```
@@ -86,7 +100,9 @@ You can also create a process by subclassing the `Process` class. This is useful
 
 ```python
 import multiprocessing
+```
 
+```python
 class MyProcess(multiprocessing.Process):
     def __init__(self, name):
         super().__init__()
@@ -94,28 +110,29 @@ class MyProcess(multiprocessing.Process):
 
     def run(self):
         print('Hello', self.name)
+```
 
-
+```python
 process = MyProcess('World')
 process.start()
 ```
 
 ## Multiprocessing vs Threading
 
-| Multiprocessing                                  | Threading                                    |
-| ------------------------------------------------ | -------------------------------------------- |
-| Uses multiple processes                          | Uses multiple threads                        |
-| Each process has its own memory space            | All threads share the same memory space      |
-| Processes are heavyweight                        | Threads are lightweight                      |
-| Processes are independent of each other          | Threads are dependent of each other          |
-| Processes can run in parallel                    | Threads can run in parallel                  |
-| Processes can run on different cores             | Threads can run on the same core             |
-| Processes can run on different CPUs              | Threads can run on the same CPU              |
-| Processes can run on different machines          | Threads can run on the same machine          |
-| Processes can run on different operating systems | Threads can run on the same operating system |
-| Processes can run on different architectures     | Threads can run on the same architecture     |
-| Processes can run on different platforms         | Threads can run on the same platform         |
-| Processes can run on different devices           | Threads can run on the same device           |
+Multiprocessing                                  | Threading
+------------------------------------------------ | --------------------------------------------
+Uses multiple processes                          | Uses multiple threads
+Each process has its own memory space            | All threads share the same memory space
+Processes are heavyweight                        | Threads are lightweight
+Processes are independent of each other          | Threads are dependent of each other
+Processes can run in parallel                    | Threads can run in parallel
+Processes can run on different cores             | Threads can run on the same core
+Processes can run on different CPUs              | Threads can run on the same CPU
+Processes can run on different machines          | Threads can run on the same machine
+Processes can run on different operating systems | Threads can run on the same operating system
+Processes can run on different architectures     | Threads can run on the same architecture
+Processes can run on different platforms         | Threads can run on the same platform
+Processes can run on different devices           | Threads can run on the same device
 
 ## How to Create a Pool of Threads in Python
 
@@ -123,10 +140,14 @@ To create a pool of threads in Python, you can use the `concurrent.futures` modu
 
 ```python
 import concurrent.futures
+```
 
+```python
 def task(n):
     return n * n
+```
 
+```python
 with concurrent.futures.ThreadPoolExecutor(5) as executor:
     print(list(executor.map(task, range(10))))
 ```
@@ -139,10 +160,14 @@ To create a pool of processes in Python, you can use the `multiprocessing` modul
 
 ```python
 import multiprocessing
+```
 
+```python
 def task(n):
     return n * n
+```
 
+```python
 with multiprocessing.Pool(5) as pool:
     print(pool.map(task, range(10)))
 ```
@@ -151,10 +176,14 @@ with multiprocessing.Pool(5) as pool:
 
 ```python
 import concurrent.futures
+```
 
+```python
 def task(n):
     return n * n
+```
 
+```python
 with concurrent.futures.ProcessPoolExecutor(5) as executor:
     print(list(executor.map(task, range(10))))
 ```

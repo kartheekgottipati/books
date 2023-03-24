@@ -4,24 +4,38 @@ Tuples are immutable sequences of values. They can contain any type of value, an
 
 ```python
 >>> a = (1, 2, 3)
+```
+
+The above code creates a tuple with 3 items. Each item is initialized to 0.
+
+```python
 >>> type(a)
 <class 'tuple'>
+```
 
-# Change an item in a tuple
+## Change an item in a tuple
+
+```python
 >>> a = (1, 2, 3)
 >>> a[0] = 4
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object does not support item assignment
+```
 
-# Delete an item from a tuple
+## Delete an item from a tuple
+
+```python
 >>> a = (1, 2, 3)
 >>> del a[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'tuple' object doesn't support item deletion
+```
 
-# Remove all items from a tuple
+## Remove all items from a tuple
+
+```python
 >>> a = (1, 2, 3)
 >>> a.clear()
 Traceback (most recent call last):
@@ -29,7 +43,7 @@ Traceback (most recent call last):
 AttributeError: 'tuple' object has no attribute 'clear'
 ```
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

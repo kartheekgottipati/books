@@ -12,7 +12,9 @@ class Car:
         self.brand = brand
         self.model = model
         self.year = year
+```
 
+```python
 car = Car('Audi', 'A4', 2016)
 ```
 
@@ -86,9 +88,9 @@ class Car:
 
 In the above example, we have defined the `__len__()` method. This method is called when we try to get the length of the object of the `Car` class.
 
-For more information about magic methods, you can visit the python documentation at [https://docs.python.org/3/reference/datamodel.html#special-method-names](https://docs.python.org/3/reference/datamodel.html#special-method-names)
+For more information about magic methods, you can visit the python documentation at <https://docs.python.org/3/reference/datamodel.html#special-method-names>
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

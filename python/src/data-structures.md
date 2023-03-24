@@ -4,13 +4,13 @@ In this chapter, we will discuss the data structures in Python, including lists,
 
 The following data structures are mutable which means that they can be changed after they are created. They include:
 
-- `list`
-- `set`
-- `dict`
-- `bytearray`
+- [Lists](lists.md)
+- [Sets](sets.md)
+- [Dictionaries](dictionaries.md)
+- [Bytearrays](bytearrays.md)
 
 The following data structures are immutable which means that they cannot be changed after they are created. They include:
 
-- `tuple`
-- `frozenset`
-- `bytes`
+- [Tuples](tuples.md)
+- [Frozensets](frozensets.md)
+- [Bytes](bytes.md)

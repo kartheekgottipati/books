@@ -24,10 +24,17 @@ The `re.search()` function searches a string for a match, and returns a `Match` 
 
 ```python
 import re
+```
 
+```python
 txt = "The rain in Spain"
-x = re.search("^The.*Spain$", txt)
+```
 
+```python
+x = re.search("^The.*Spain$", txt)
+```
+
+```python
 if x:
   print("YES! We have a match!")
 else:
@@ -46,13 +53,16 @@ The `re.findall()` function returns a list containing all matches.
 
 ```python
 import re
+```
 
+```python
 txt = "The rain in Spain"
+```
 
 # Find all lower case characters alphabetically between "a" and "m":
 
-x = re.findall("[a-m]", txt)
-print(x)
+```python
+x = re.findall("[a-m]", txt) print(x)
 ```
 
 The output of the above code is:
@@ -61,19 +71,22 @@ The output of the above code is:
 ['h', 'e', 'a', 'i', 'i', 'a', 'i']
 ```
 
-### The `re.split()` function
+## The `re.split()` function
 
 The `re.split()` function splits the string where there is a match and returns a list of strings where the splits have occurred.
 
 ```python
 import re
+```
 
+```python
 txt = "The rain in Spain"
+```
 
 # Split at each white-space character:
 
-x = re.split("\s", txt)
-print(x)
+```python
+x = re.split("\s", txt) print(x)
 ```
 
 The output of the above code is:
@@ -82,19 +95,22 @@ The output of the above code is:
 ['The', 'rain', 'in', 'Spain']
 ```
 
-### The `re.sub()` function
+## The `re.sub()` function
 
 The `re.sub()` function replaces the matches with the text of your choice.
 
 ```python
 import re
+```
 
+```python
 txt = "The rain in Spain"
+```
 
 # Replace every white-space character with the number 9:
 
-x = re.sub("\s", "9", txt)
-print(x)
+```python
+x = re.sub("\s", "9", txt) print(x)
 ```
 
 The output of the above code is:
@@ -103,17 +119,21 @@ The output of the above code is:
 The9rain9in9Spain
 ```
 
-### Match object
+## Match object
 
 A Match Object is an object containing information about the search and the result.
 
 ```python
 import re
+```
 
+```python
 txt = "The rain in Spain"
+```
 
 # Search for a sequence that starts with "The" and ends with "Spain":
 
+```python
 x = re.search("^The.*Spain$", txt)
 
 if x:

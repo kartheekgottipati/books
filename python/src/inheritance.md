@@ -13,8 +13,9 @@ class Bird:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Penguin(Bird):
 
         def __init__(self):
@@ -27,17 +28,21 @@ class Penguin(Bird):
 
         def run(self):
             print("Run faster")
+```
 
-peggy = Penguin()
+```python
+>>> peggy = Penguin()
+Bird is ready Penguin is ready
+```
 
->>> Bird is ready
->>> Penguin is ready
+```python
+>>> peggy.whoisThis()
+Penguin
+```
 
-peggy.whoisThis()
->>> Penguin
-
-peggy.swim()
->>> Swim faster
+```python
+>>> peggy.swim()
+Swim faster
 ```
 
 Here, we have two classes `Bird` and `Penguin`. We are deriving `Penguin` from `Bird`. So, `Penguin` is the derived class and `Bird` is the base class.
@@ -61,7 +66,9 @@ In single inheritance, a child class inherits from only one parent class. The sy
 ```python
 class BaseClass:
     Body of base class
+```
 
+```python
 class DerivedClass(BaseClass):
     Body of derived class
 ```
@@ -79,8 +86,9 @@ class Bird:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Penguin(Bird):
     def __init__(self):
         # call super() function
@@ -92,7 +100,6 @@ class Penguin(Bird):
 
     def run(self):
         print("Run faster")
-
 ```
 
 ### Multiple Inheritance
@@ -102,10 +109,14 @@ In multiple inheritance, a child class inherits from multiple parent classes. Th
 ```python
 class BaseClass1:
     Body of base class 1
+```
 
+```python
 class BaseClass2:
     Body of base class 2
+```
 
+```python
 class DerivedClass(BaseClass1, BaseClass2):
     Body of derived class
 ```
@@ -122,8 +133,9 @@ class Animal:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Bird:
     def __init__(self):
         print("Bird is ready")
@@ -133,8 +145,9 @@ class Bird:
 
     def run(self):
         print("Run faster")
+```
 
-
+```python
 class Penguin(Animal, Bird):
     def __init__(self):
         # call super() function
@@ -146,17 +159,22 @@ class Penguin(Animal, Bird):
 
     def fly(self):
         print("Fly faster")
+```
 
+```python
+>>> peggy = Penguin()
+Animal is ready
+Penguin is ready
+```
 
-peggy = Penguin()
->>> Animal is ready
->>> Penguin is ready
+```python
+>>> peggy.whoisThis()
+Penguin
+```
 
-peggy.whoisThis()
->>> Penguin
-
-peggy.swim()
->>> Swim faster
+```python
+>>> peggy.swim()
+Swim faster
 ```
 
 Order of inheritance matters in multiple inheritance. If the same method is present in both the base classes, the method in the first base class will be called. In the above example, the `__init__()` method of `Animal` class is called, not the `__init__()` method of `Bird` class.
@@ -178,10 +196,14 @@ In multilevel inheritance, we have a child and grandchild relationship between c
 ```python
 class BaseClass:
     Body of base class
+```
 
+```python
 class DerivedClass(BaseClass):
     Body of derived class
+```
 
+```python
 class SubDerivedClass(DerivedClass):
     Body of sub derived class
 ```
@@ -198,8 +220,9 @@ class Animal:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Bird(Animal):
     def __init__(self):
         # call super() function
@@ -211,8 +234,9 @@ class Bird(Animal):
 
     def run(self):
         print("Run faster")
+```
 
-
+```python
 class Penguin(Bird):
     def __init__(self):
         # call super() function
@@ -224,24 +248,33 @@ class Penguin(Bird):
 
     def fly(self):
         print("Fly faster")
+```
 
+```python
+>>> peggy = Penguin()
+Animal is ready
+Bird is ready
+Penguin is ready
+```
 
-peggy = Penguin()
->>> Animal is ready
->>> Bird is ready
->>> Penguin is ready
+```python
+>>> peggy.whoisThis()
+Penguin
+```
 
-peggy.whoisThis()
->>> Penguin
+```python
+>>> peggy.swim()
+Swim faster
+```
 
-peggy.swim()
->>> Swim faster
+```python
+>>> peggy.run()
+Run faster
+```
 
-peggy.run()
->>> Run faster
-
-peggy.fly()
->>> Fly faster
+```python
+>>> peggy.fly()
+Fly faster
 ```
 
 Order of inheritance matters in multilevel inheritance. If the same method is present in both the base classes, the method in the first base class will be called. In the above example, the `__init__()` method of `Animal` class is called, not the `__init__()` method of `Bird` class.
@@ -263,10 +296,14 @@ In hierarchical inheritance, we have multiple child classes that inherit from a 
 ```python
 class BaseClass:
     Body of base class
+```
 
+```python
 class DerivedClass1(BaseClass):
     Body of derived class 1
+```
 
+```python
 class DerivedClass2(BaseClass):
     Body of derived class 2
 ```
@@ -283,8 +320,9 @@ class Animal:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Bird(Animal):
     def __init__(self):
         # call super() function
@@ -296,8 +334,9 @@ class Bird(Animal):
 
     def run(self):
         print("Run faster")
+```
 
-
+```python
 class Penguin(Bird):
     def __init__(self):
         # call super() function
@@ -309,8 +348,9 @@ class Penguin(Bird):
 
     def fly(self):
         print("Fly faster")
+```
 
-
+```python
 class Snake(Animal):
     def __init__(self):
         # call super() function
@@ -322,36 +362,53 @@ class Snake(Animal):
 
     def climb(self):
         print("Climb faster")
+```
 
+```python
+>>> peggy = Penguin()
+Animal is ready
+Bird is ready
+Penguin is ready
+```
 
-peggy = Penguin()
->>> Animal is ready
->>> Bird is ready
->>> Penguin is ready
+```python
+>>> peggy.whoisThis()
+Penguin
+```
 
-peggy.whoisThis()
->>> Penguin
+```python
+>>> peggy.swim()
+Swim faster
+```
 
-peggy.swim()
->>> Swim faster
+```python
+>>> peggy.run()
+Run faster
+```
 
-peggy.run()
->>> Run faster
+```python
+>>> peggy.fly()
+Fly faster
+```
 
-peggy.fly()
->>> Fly faster
+```python
+>>> kaa = Snake()
+Animal is ready
+```
 
-kaa = Snake()
->>> Animal is ready
+```python
+>>> kaa.whoisThis()
+Snake
+```
 
-kaa.whoisThis()
->>> Snake
+```python
+>>> kaa.swim()
+Swim faster
+```
 
-kaa.swim()
->>> Swim faster
-
-kaa.climb()
->>> Climb faster
+```python
+>>> kaa.climb()
+Climb faster
 ```
 
 Order of inheritance matters in hierarchical inheritance. If the same method is present in both the base classes, the method in the first base class will be called. In the above example, the `__init__()` method of `Animal` class is called, not the `__init__()` method of `Bird` class.
@@ -395,8 +452,9 @@ class Animal:
 
     def swim(self):
         print("Swim faster")
+```
 
-
+```python
 class Bird(Animal):
     def __init__(self):
         # call super() function
@@ -408,8 +466,9 @@ class Bird(Animal):
 
     def run(self):
         print("Run faster")
+```
 
-
+```python
 class Penguin(Bird):
     def __init__(self):
         # call super() function
@@ -421,8 +480,9 @@ class Penguin(Bird):
 
     def fly(self):
         print("Fly faster")
+```
 
-
+```python
 class Snake(Animal):
     def __init__(self):
         # call super() function
@@ -434,8 +494,9 @@ class Snake(Animal):
 
     def climb(self):
         print("Climb faster")
+```
 
-
+```python
 class Parrot(Bird, Snake):
     def __init__(self):
         # call super() function
@@ -450,42 +511,61 @@ class Parrot(Bird, Snake):
 
     def swim(self):
         print("Swim faster")
+```
 
+```python
+>>> peggy = Penguin()
+Animal is ready Bird is ready Penguin is ready
+```
 
-peggy = Penguin()
->>> Animal is ready
->>> Bird is ready
->>> Penguin is ready
+```python
+>>> peggy.whoisThis()
+Penguin
+```
 
-peggy.whoisThis()
->>> Penguin
+```python
+>>> peggy.swim()
+Swim faster
+```
 
-peggy.swim()
->>> Swim faster
+```python
+>>> peggy.run()
+Run faster
+```
 
-peggy.run()
->>> Run faster
+```python
+>>> peggy.fly()
+Fly faster
+```
 
-peggy.fly()
->>> Fly faster
+```python
+>>> jim = Parrot()
+Animal is ready
+```
 
-jim = Parrot()
->>> Animal is ready
+```python
+>>> jim.whoisThis()
+Parrot
+```
 
-jim.whoisThis()
->>> Parrot
+```python
+>>> jim.swim()
+Swim faster
+```
 
-jim.swim()
->>> Swim faster
+```python
+>>> jim.run()
+Run faster
+```
 
-jim.run()
->>> Run faster
+```python
+>>> jim.fly()
+Fly faster
+```
 
-jim.fly()
->>> Fly faster
-
-jim.climb()
->>> Climb faster
+```python
+>>> jim.climb()
+Climb faster
 ```
 
 In the above example, the `__init__()` method of `Animal` class is called, not the `__init__()` method of `Bird` class.
@@ -504,7 +584,7 @@ The `fly()` method is present in `Parrot` class only. So, the `fly()` method of 
 
 The `swim()` method is present in `Parrot` class only. So, the `swim()` method of `Parrot` class is called.
 
----
+--------------------------------------------------------------------------------
 
 Conclusion
 

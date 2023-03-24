@@ -15,7 +15,9 @@ def sum_of_squares(x, y, z):
     z_squared = z * z
     sum = x_squared + y_squared + z_squared
     return sum
+```
 
+```python
 result = sum_of_squares(1, 2, 3)
 print(result)
 ```
@@ -47,31 +49,42 @@ result_two = y + x
 When you run the program, it will pause at the line with the breakpoint and allow you to inspect the current state of the program. You can use the `l` (list) command to view the code on the current line and the surrounding lines. You can use the `n` (next) command to execute the next line of code. You can use the `p` (print) command to print the value of a variable. You can use the `c` (continue) command to finish debugging and continue the program execution.
 
 ```bash
-> python3 debug.py
---Return--
-> /home/ccuser/workspace/debug.py(10)<module>()->None
--> pdb.set_trace()
+>>> python3 debug.py
+```
+
+```bash
+> /Users/username/debug.py(8)<module>()
+-> result_two = y + x
+(Pdb)
+```
+
+```bash
 (Pdb) l
-  5  	z = 3
+  3      z = 3
+  4
+  5      result_one = y + z
   6
-  7  	result_one = y + z
-  8
-  9  	pdb.set_trace()
- 10  ->
- 11  	result_two = y + x
+  7      pdb.set_trace()
+  8  ->    result_two = y + x
 [EOF]
+```
+
+```bash
 (Pdb) n
-> /home/ccuser/workspace/debug.py(11)<module>()->None
--> result_two = y + x
+> /Users/username/debug.py(9)<module>()
+-> print(result_one)
+(Pdb)
+```
+
+```bash
+14
+```
+
+```bash
 (Pdb) n
---Return--
-> /home/ccuser/workspace/debug.py(11)<module>()->None
+> /Users/username/debug.py(8)<module>()
 -> result_two = y + x
-(Pdb) p x
-[1, 3, 4]
-(Pdb) p y
-2
-(Pdb) c
+(Pdb)
 ```
 
 ### Debugging using logging
@@ -109,19 +122,25 @@ Python has a built-in `unittest` module that you can use to write unit tests. Th
 
 ```python
 import unittest
+```
 
+```python
 def sum_of_squares(x, y, z):
     x_squared = x * x
     y_squared = y * y
     z_squared = z * z
     sum = x_squared + y_squared + z_squared
     return sum
+```
 
+```python
 class TestSumOfSquares(unittest.TestCase):
     def test_sum_of_squares(self):
         result = sum_of_squares(1, 2, 3)
         self.assertEqual(result, 14)
+```
 
+```python
 if __name__ == '__main__':
     unittest.main()
 ```
@@ -145,7 +164,9 @@ In python you can use the `unittest` library or third party libraries like `pyte
 ```python
 import unittest
 from my_app import Calculator
+```
 
+```python
 class TestCalculatorIntegration(unittest.TestCase):
 
     def setUp(self):
@@ -157,7 +178,9 @@ class TestCalculatorIntegration(unittest.TestCase):
         self.calculator.subtract(3)
         result = self.calculator.value
         self.assertEqual(result, 2)
+```
 
+```python
 if __name__ == '__main__':
     unittest.main()
 ```
@@ -171,7 +194,9 @@ In python you can use tools like `selenium`, `playwright` or `pyppeteer` to writ
 ```python
 import unittest
 from selenium import webdriver
+```
 
+```python
 class TestWebAppEndToEnd(unittest.TestCase):
 
     def setUp(self):
@@ -189,7 +214,9 @@ class TestWebAppEndToEnd(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+```
 
+```python
 if __name__ == "__main__":
     unittest.main()
 ```
